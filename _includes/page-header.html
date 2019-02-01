@@ -1,0 +1,15 @@
+<header>
+	  <!-- Fixed navbar -->
+	  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light shadow">
+		<a class="navbar-brand" href="{{ site.baseurl }}/index">{% include logo.html %}ENACT</a>
+
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<p class="navbar-nav mr-auto">
+				Enhancing NAtional Clinical audiT and feedback
+			</p>
+			<div class="progress mt-2 mt-md-0">
+				<div class="progress-bar bg-success" role="progressbar" style="width:{{ include.pb-width }}%" aria-valuenow="{{ include.pb-width }}" aria-valuemin="0" aria-valuemax="100">{{ include.pb-width }}%</div>
+			</div>
+		</div>
+	  </nav>
+</header>
