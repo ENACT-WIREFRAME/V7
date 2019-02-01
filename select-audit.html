@@ -1,0 +1,67 @@
+---
+layout: page
+---
+{% include page-header.html pb-width="40" %}
+<main role="main">
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="bg-light sidebar">
+			</nav>
+			<h2>Please select your audit, role and organisation type</h2>
+			<form action="{{ site.baseurl }}/audit-report" class="select-audit">
+				<fieldset>
+					<div class="form-group">
+						<label class="mr-sm-2" for="auditSelect"><span class="badge badge-success">1</span> Select your audit:</label>
+						<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+						  <option selected>Choose...</option>
+						  <option value="1">Myocardial Ischaemia National Audit Project (MINAP)</option>
+						  <option value="2">National Comparative Audit of Blood Transfusion (NCABT)</option>
+						  <option value="3">National Diabetes Audit (NDA)</option>
+						  <option value="4">Paediatric intensive care audit network (PICANet)</option>
+						  <option value="5">Trauma audit and research network (TARN)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label class="mr-sm-2" for="roleSelect"><span class="badge badge-success">2</span> Select your main role:</label>
+						<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+						  <option selected>Choose...</option>
+						  <option value="1">Allied health professional</a>
+						  <option value="2">Fully trained doctor (e.g. consultant, general practitioner)</option>
+						  <option value="3">Manager</option>
+						  <option value="4">Nurse or nurse specialist</option>
+						  <option value="4">Training doctor (e.g. specialist registrar, foundation year)</option>
+						  <option value="5">Other [please state]</option>
+						</select>
+					</div>
+					<!--<div class="form-group">
+					  <label class="mr-sm-2" for="roleSelect">Please state</label>
+					  <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+					</div>-->
+					<div class="form-group">
+						<label class="mr-sm-2" for="organisationSelect"><span class="badge badge-success">3</span>Organisation type:</label>
+						<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+							<option selected>Choose...</option>
+							<option value="1">Commissioning</option>
+							<option value="2">Community healthcare trust</option>
+							<option value="3">General practice</option>
+							<option value="4">Hospital trust</option>
+							<option value="5">Other [please state]</option>
+						</select>
+					</div>
+					<!--<div class="form-group">
+					   <label class="mr-sm-2" for="roleSelect">Please state</label>
+					  <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+					</div>-->
+					<button type="submit" class="btn btn-success">Submit and view report</button>
+					<!--<a id="" href="" class="btn btn-lg btn-secondary"><span class="badge badge-pill">4.</span>&nbsp;View audit report</a>-->
+				</fieldset>
+			</form>
+		</div><!-- END ROW-->
+	</div><!-- END CONTAINER_FLUID-->
+</main>
+<footer class="footer">
+	{{ include.footer-approval.html }}
+</footer>
+
+
+

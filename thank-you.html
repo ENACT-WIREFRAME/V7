@@ -1,0 +1,52 @@
+---
+layout: page
+---
+{% include page-header.html pb-width="100" %}
+<main role="main">
+	<div class="container-fluid">
+		<div id="message" class="alert alert-success-fade alert-dismissible fade show">
+			You have now completed the survey.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+		</div>
+		<nav class="bg-light sidebar">
+		</nav>
+		<div class="col">
+			<h2>Thank you much for your participation.</h2>
+			<p>
+				Hopefully this will help us to improve your experience of feedback in the future.
+			</p>
+			<p>
+				If you wish to receive the £25 voucher and /or the certificate of completion, please share your contact details below so that we can send one or both of these to you. If you do not wish to receive either of these, you can exit the survey now. 
+			</p>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+				<label class="form-check-label" for="defaultCheck1">
+					Yes, I wish to receive the £25 voucher
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+				<label class="form-check-label" for="defaultCheck2">
+					Yes, I wish to receive a certificate of completion for my Continuing Professional Development records
+				</label>
+			</div>
+			<form class="form-inline input-group-lg mb-4 mt-4">
+				<label class="sr-only" for="inlineFormInputName2">Name</label>
+				<input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Name">
+				<label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+				<div class="input-group mb-2 mr-sm-2 input-group-lg">
+					<div class="input-group-prepend">
+						<div class="input-group-text"><i class="far fa-envelope"></i></div>
+						</div>
+					<input type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Email address">
+					<button type="submit" class="btn btn-primary mb-2 btn-lg">Submit<i class="fas fa-paper-plane ml-1"></i></button>
+				</div>
+				<p>
+					<a href="{{ site.baseurl }}/evidence-based-tips.html" target="_blank">Evidence-based tips for effective feedback</a>
+				</p>
+			</form>                   
+		</div><!-- end col-->
+	</div><!-- end container-fluid-->
+</main>
+
+
