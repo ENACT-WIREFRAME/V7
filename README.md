@@ -3,11 +3,10 @@
 kick it
 
 Changes made:
+- Switched all mods to off versions
 
 
 To do:
-- Update content for this audit
-- Formatting on the thankyou screen
-- Fix logo on evidence-based-tips page
+-
 
 
